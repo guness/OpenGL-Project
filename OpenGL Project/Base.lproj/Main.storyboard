@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
@@ -685,7 +686,7 @@
                             <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-87-3OS">
                                 <rect key="frame" x="802" y="555" width="142" height="58"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                <size key="cellSize" width="76" height="18"/>
+                                <size key="cellSize" width="75" height="18"/>
                                 <size key="intercellSpacing" width="4" height="2"/>
                                 <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="HPt-63-Knj">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -717,7 +718,7 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="db6-Aw-sP4">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="db6-Aw-sP4">
                                 <rect key="frame" x="800" y="621" width="55" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Shading" id="D1H-aR-eja">
                                     <font key="font" metaFont="system"/>
@@ -725,7 +726,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Ycq-sZ-vip">
+                            <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycq-sZ-vip">
                                 <rect key="frame" x="800" y="667" width="149" height="18"/>
                                 <buttonCell key="cell" type="check" title="Show Control Points" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3bg-uv-l6E">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -738,14 +739,14 @@
                             <openGLView wantsLayer="YES" rendererType="accelerated" samplingRate="4" useAuxiliaryDepthBufferStencil="NO" wantsBestResolutionOpenGLSurface="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOf-Cg-ozV" customClass="MyOpenGLView">
                                 <rect key="frame" x="0.0" y="0.0" width="777" height="723"/>
                             </openGLView>
-                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-86-1od">
-                                <rect key="frame" x="962" y="494" width="146" height="21"/>
+                            <slider verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-86-1od">
+                                <rect key="frame" x="962" y="494" width="146" height="20"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="BNI-hp-QS6"/>
                                 <connections>
                                     <action selector="transparencyChanged:" target="XfG-lQ-9wD" id="Myv-7K-ZZ7"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="okW-eP-4mT">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okW-eP-4mT">
                                 <rect key="frame" x="962" y="521" width="38" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Color" id="Upn-by-Zc0">
                                     <font key="font" metaFont="system"/>
@@ -834,7 +835,7 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mY6-lA-2Ch">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mY6-lA-2Ch">
                                 <rect key="frame" x="800" y="521" width="53" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Camera" id="BQl-QJ-Rs2">
                                     <font key="font" metaFont="system"/>
@@ -842,7 +843,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="rK5-ZI-hhD">
+                            <colorWell misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-ZI-hhD">
                                 <rect key="frame" x="964" y="466" width="44" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="Xuf-xb-o8Z"/>
@@ -852,7 +853,7 @@
                                     <action selector="colorSelected:" target="XfG-lQ-9wD" id="5eD-gU-eRn"/>
                                 </connections>
                             </colorWell>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-YV-QVW">
+                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-YV-QVW">
                                 <rect key="frame" x="869" y="480" width="75" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="DyP-t2-moi">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="6TG-a0-adz">
@@ -867,7 +868,7 @@
                                     <action selector="zoomEntered:" target="XfG-lQ-9wD" id="0w8-xk-UeD"/>
                                 </connections>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-HC-8X8">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-HC-8X8">
                                 <rect key="frame" x="800" y="483" width="40" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Zoom" id="q2n-X0-KaG">
                                     <font key="font" metaFont="system"/>
@@ -918,7 +919,7 @@
                                     <action selector="editModeActivated:" target="XfG-lQ-9wD" id="Rpi-MO-rHm"/>
                                 </connections>
                             </segmentedControl>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-nJ-WFg">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-nJ-WFg">
                                 <rect key="frame" x="962" y="686" width="29" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Edit" id="lPx-nf-RiS">
                                     <font key="font" metaFont="system"/>
@@ -926,13 +927,13 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <box horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="QBE-oR-E4f">
+                            <box horizontalHuggingPriority="750" misplaced="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="QBE-oR-E4f">
                                 <rect key="frame" x="953" y="450" width="5" height="261"/>
                                 <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-mE-3YM">
+                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-mE-3YM">
                                 <rect key="frame" x="1031" y="384" width="75" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="bZQ-bP-M6h">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="JCt-3f-wsf">
@@ -947,7 +948,7 @@
                                     <action selector="yawEntered:" target="XfG-lQ-9wD" id="hYl-xN-FBN"/>
                                 </connections>
                             </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MZ7-az-KYD">
+                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZ7-az-KYD">
                                 <rect key="frame" x="1031" y="416" width="75" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Z2Y-D4-iX0">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="B3d-gU-yIN">
@@ -962,7 +963,7 @@
                                     <action selector="pitchEntered:" target="XfG-lQ-9wD" id="FVO-Ij-sES"/>
                                 </connections>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-WF-VWW">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-WF-VWW">
                                 <rect key="frame" x="962" y="419" width="36" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Pitch" id="IPg-R2-NN4">
                                     <font key="font" metaFont="system"/>
@@ -970,7 +971,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-XQ-XdF">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-XQ-XdF">
                                 <rect key="frame" x="962" y="387" width="30" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Yaw" id="JsG-SU-SY0">
                                     <font key="font" metaFont="system"/>
@@ -984,7 +985,7 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-t1-pUO">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-t1-pUO">
                                 <rect key="frame" x="802" y="336" width="58" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mapping" id="6Ru-B1-t31">
                                     <font key="font" metaFont="system"/>
@@ -992,7 +993,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Bb-kv-VyY">
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Bb-kv-VyY">
                                 <rect key="frame" x="796" y="300" width="110" height="32"/>
                                 <buttonCell key="cell" type="push" title="Select Map" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cYt-KW-HX3">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1020,7 +1021,7 @@
                                     <action selector="mappingChanged:" target="XfG-lQ-9wD" id="DUx-f3-SDp"/>
                                 </connections>
                             </segmentedControl>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-HI-YXx">
+                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-HI-YXx">
                                 <rect key="frame" x="1016" y="466" width="90" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="z8B-tm-gkj">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="AlM-Li-nWT">

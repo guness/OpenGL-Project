@@ -1,5 +1,5 @@
-#import <Cocoa/Cocoa.h>
 #import "MyOpenGLView.h"
+#import <Cocoa/Cocoa.h>
 @interface ViewController : NSViewController
 @property (weak) IBOutlet MyOpenGLView *openGLView;
 @property (weak) IBOutlet NSTextField *zoomText;
@@ -22,4 +22,3 @@
 @property (weak) IBOutlet NSTextField *transparencyText;
 
 @end
-
